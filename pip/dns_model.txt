@@ -1,0 +1,9 @@
+Vendor:    ASUS, MSI, Apple
+CPU:       Intel Core i5, AMD Ryzen 5, Apple M3
+RAM:       8GB, 16GB, 32GB
+OS:        Windows 11, macOS, NoOS
+
+
+IF [Vendor] = "Apple" THEN [CPU] = "Apple M3" AND [OS] = "macOS";
+IF [CPU] = "Apple M3" THEN [Vendor] = "Apple";
+IF [OS] = "macOS" THEN [Vendor] = "Apple";
